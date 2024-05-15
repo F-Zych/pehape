@@ -13,7 +13,6 @@
             header("location: index.php")
             ;die()
         ;}
-
         print "Witaj $imie.";
     ?>
     <br><br>
@@ -35,8 +34,10 @@
                 <option value="Komputer">Komputer</option>
             </select>
             <br><br>
-    <input type="submit" value="Zaloguj się">
+    <input type="submit" value="DODAJ">
     </form><br>
+    <a href="koszyk.php">koszyk</a>
+    <br>
     Przed opuszczeniem strony wyloguj się!
     <br><br>
     <a href="wyloguj.php">Wyloguj</a>
