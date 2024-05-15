@@ -35,7 +35,7 @@
             </select>
             <br><br>
     <input type="submit" value="DODAJ">
-    </form><br>
+    </form> <br>
     <a href="koszyk.php">koszyk</a>
     <br>
     Przed opuszczeniem strony wyloguj się!

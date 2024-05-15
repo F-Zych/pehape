@@ -6,7 +6,8 @@
     <title>Koszyk</title>
 </head>
 <body>
-    <?php
+    <form action="usun.php" method="post">
+    <?php   
         session_start();
         $imie = ucfirst($_SESSION['log']);
         if ( !isset($_SESSION["log"]) ) {
@@ -19,13 +20,16 @@
                 $_SESSION["koszyk"] = serialize($_POST['kosyk']);
             }
             else{
-                $_SESSION["koszyk"] = serialize(array_unique(array_merge($_POST['kosyk'],unserialize($_SESSION["koszyk"]))));
+                $_SESSION["koszyk"] = serialize(array_unique(array_merge($_POST['kosyk'], unserialize($_SESSION["koszyk"]))));
             }
         }
         
+        
         foreach (unserialize($_SESSION['koszyk']) as $produkt) {
-            print($produkt . "<br>");
+            print("<label><input type='checkbox' name='do_usuniecia[]' value='$produkt'>".$produkt."<br>");
         }
     ?>
+    <input type="submit" value="zabij"> &nbsp;&nbsp; <a href="index.php">Powróć do strony głównej</a>
+    </form>
 </body>
 </html>

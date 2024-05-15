@@ -17,8 +17,8 @@
     }
 ?>
 Wylogowałeś się ze strony.
-<br><br>
+<br> <br>
 <a href="index.php">Powróć do strony głównej</a>
 </body>
 </html>
-
+ 
