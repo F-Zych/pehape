@@ -29,7 +29,7 @@
             exit();
         } 
         elseif (isset($_POST['nazwa']) && isset( $_POST['haslo'] ) ) {
-#           if ( $_POST['nazwa'] == "janek" && $_POST['haslo'] == "jan23" )
+#            if ( $_POST['nazwa'] == "janek" && $_POST['haslo'] == "jan23" )
             $login = $_POST['nazwa'];
             $haslo = $_POST['haslo'];
             for($i=0; $i<count($loginy); $i++){ 
